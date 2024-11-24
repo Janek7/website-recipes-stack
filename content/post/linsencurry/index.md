@@ -10,6 +10,6 @@ title: Linsencurry
 ---
 
 
-> Wo gefunden?  Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte', S. 32
+> Wo gefunden?  Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte' auf Seite 32.
 
 Guten Appetit! :)

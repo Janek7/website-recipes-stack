@@ -10,6 +10,6 @@ title: Mac and Cheese
 ---
 
 
-> Wo gefunden?  Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte', S. 19
+> Wo gefunden?  Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte' auf Seite 19.
 
 Guten Appetit! :)

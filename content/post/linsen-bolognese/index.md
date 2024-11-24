@@ -10,6 +10,6 @@ title: Linsen Bolognese
 ---
 
 
-> Wo gefunden?  Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte', S. 17
+> Wo gefunden?  Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte' auf Seite 17.
 
 Guten Appetit! :)

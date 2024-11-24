@@ -22,6 +22,12 @@ LINK_SOURCES = [
     "Instagram"
 ]
 
+time_icon_element = '''<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="17" height="17" viewBox="0 0 22 22" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"></path>
+  <circle cx="12" cy="12" r="9"></circle>
+  <polyline points="12 7 12 12 15 15"></polyline>
+</svg>'''
+
 
 def process_recipes(recipes: pd.DataFrame) -> None:
     """
@@ -61,12 +67,12 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
 
     # 2b) time
     if recipe_row['Time'] is not None:
-        time_formatted = f"Die Zubereitung dauert ca. {int(recipe_row['Time'])} Minuten." if pd.notna(recipe_row['Time']) else None
+        time_formatted = f"{time_icon_element} Die Zubereitung dauert ca. {int(recipe_row['Time'])} Minuten." if pd.notna(recipe_row['Time']) else None
 
     # 2c) source
     source = None
     if recipe_row['Source'] in BOOKS:
-        source = f" Im Kochbuch '{recipe_row['Source']}', {recipe_row['Source Link']}"
+        source = f" Im Kochbuch '{recipe_row['Source']}' auf Seite {recipe_row['Source Link']}."
     elif recipe_row['Source'] in LINK_SOURCES:
         if recipe_row['Source Link']:
             source = f"[{recipe_row['Source']}]({recipe_row['Source Link']})"
