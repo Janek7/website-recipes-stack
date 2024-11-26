@@ -17,9 +17,9 @@ emoji = "🍥"
 subtitle = "Alle leckeren Rezepte gesammelt an einem Ort :)"
 
 [sidebar.avatar]
-enabled = false
+enabled = true
 local = true
-src = "img/avatar.png"
+src = "img/avatar.jpg"
 
 [article]
 headingAnchor = false
