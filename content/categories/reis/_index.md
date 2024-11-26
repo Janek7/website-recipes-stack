@@ -1,7 +1,7 @@
 ---
 title: Reis
 description: Für viele Gerichte ist ein lockerer Reis eine sehr gute Beilage  
-image:
+image: reis.jpg
 
 # Badge style
 style:

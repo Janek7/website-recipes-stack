@@ -1,7 +1,7 @@
 ---
 title: Weihnachtsplätzchen
 description: Klassische und moderne Weihnachtsplätzchen für die Adventszeit
-image:
+image: weihnachts_platzchen.jpg
 
 # Badge style
 style:

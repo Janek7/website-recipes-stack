@@ -1,7 +1,7 @@
 ---
 title: Backen
-description: Süße frisch gebackene Kuchen, Torten und Teilchen aller Art
-image:
+description: Süße frisch gebackene Kuchen, Torten, Teilchen und vieles mehr
+image: backen.jpg
 
 # Badge style
 style:

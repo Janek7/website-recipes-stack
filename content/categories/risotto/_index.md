@@ -1,7 +1,7 @@
 ---
 title: Risotto
 description: Cremige Risotto Gerichte mit unterschiedlichen Gemüsen verfeinert
-image:
+image: risotto.jpg
 
 # Badge style
 style:

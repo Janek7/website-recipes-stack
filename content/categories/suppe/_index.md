@@ -1,7 +1,7 @@
 ---
-title: Sonstiges
-description: Cremige Suppen und Brühen mit saisonalen Gemüsen
-image:
+title: Suppe
+description: Cremige Suppen und Brühen mit saisonalem Gemüse
+image: suppe.jpg
 
 # Badge style
 style:

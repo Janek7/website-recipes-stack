@@ -1,7 +1,7 @@
 ---
 title: Auflauf
 description: Überbackene Gerichte mit herzhaften Käsekrusten
-image:
+image: auflauf.jpg
 
 # Badge style
 style:

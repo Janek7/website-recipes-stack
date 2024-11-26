@@ -1,7 +1,7 @@
 ---
 title: Pasta
 description: Klassische Nudelgerichte mit leckeren Soßen 
-image:
+image: pasta.jpg
 
 # Badge style
 style:

@@ -1,7 +1,7 @@
 ---
 title: Frühstück
 description: Süße und schmackhafte Frühstücksrezepte
-image:
+image: breakfast.jpg
 
 # Badge style
 style:
