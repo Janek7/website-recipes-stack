@@ -2,7 +2,7 @@
 categories:
 - Reis
 date: '2023-07-21 00:00:00'
-slug: reis-mit-paprika,-zucchini-und-feta
+slug: reis-mit-paprika-zucchini-und-feta
 tags:
 - Instagram
 - Top

@@ -4,6 +4,7 @@ import unicodedata
 import requests
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
+import re
 
 import pandas as pd
 import yaml
@@ -110,7 +111,7 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
 
 def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> None:
     # 1) prepare file and folder names
-    post_folder = f"content\\post\\{clean_name(recipe_data['slug'])}"
+    post_folder = f"content\\post\\{recipe_data['slug']}"
     post_index_file = f"{post_folder}\\index.md"
 
     # 2) prepare string to write
@@ -126,8 +127,14 @@ def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> None:
 
 
 def clean_name(recipe_name: str) -> str:
+    # replace characters as š with s
     removed_special_chars = ''.join([char for char in unicodedata.normalize('NFD', recipe_name) if not unicodedata.combining(char)])
-    return removed_special_chars.lower().replace(" ", "-")
+    # remove other special characters as ,
+    removed_special_chars = re.sub(r'[^A-Za-z0-9\s]', '', removed_special_chars)
+    # replace spaces with -
+    removed_special_chars = removed_special_chars.lower().replace(" ", "-")
+    
+    return removed_special_chars
 
 
 def get_page_title(url: str) -> str:
