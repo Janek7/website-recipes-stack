@@ -35,13 +35,90 @@
 {{- $searchScript := resources.Get "ts/search.tsx" | js.Build $opts -}}
 <script type="text/javascript" src="{{ $searchScript.RelPermalink }}" defer></script>
 
-<br></br>
+
+
+<!-- <br></br> --->
 
 
 <!-- Proposal function -->
 
+<style>
+
+/* Stil für das Label */
+#dropdownLabel {
+    color: #ffffff; /* Weiße Schriftfarbe */
+    font-size: 16px; /* Größe der Schrift */
+    margin-right: 5px; /* Abstand zwischen Label und Dropdown */
+    white-space: nowrap; /* Verhindert, dass der Text umbricht */
+}
+
+#categoryDropdown,
+#proposalButton {
+    height: 50px; /* Einheitliche Höhe */
+    width: 200px; /* Einheitliche Breite */
+    font-size: 16px; /* Gleiche Schriftgröße */
+    border-radius: 5px; /* Abgerundete Ecken für ein einheitliches Design */
+    display: inline-block; /* Gleiche Box-Darstellung */
+    text-align: center; /* Text zentrieren */
+    box-sizing: border-box; /* Innenabstand in die Größe einrechnen */
+}
+
+/* Dropdown-Stil mit Pfeil */
+#categoryDropdown {
+    background-color: #2c2c2c; /* Hintergrundfarbe */
+    color: #ffffff; /* Schriftfarbe */
+    border: 1px solid #444; /* Rahmen */
+    outline: none; /* Kein Fokusrahmen */
+    appearance: none; /* Standard-Styling entfernen */
+    cursor: pointer; /* Zeiger auf Hand ändern */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Pfeil-Icon */
+    background-repeat: no-repeat; /* Kein wiederholtes Icon */
+    background-position: right 10px center; /* Icon rechtsbündig zentriert */
+    background-size: 12px; /* Größe des Pfeils */
+    padding-right: 30px; /* Platz für den Pfeil */
+}
+
+/* Vorschlagsbutton-Stil */
+#proposalButton {
+    background-color: #444; /* Hintergrundfarbe */
+    color: #ffffff; /* Schriftfarbe */
+    border: none; /* Kein Rahmen */
+    cursor: pointer; /* Zeiger auf Hand ändern */
+    transition: background-color 0.3s ease; /* Weicher Übergang bei Hover */
+}
+
+#proposalButton:hover {
+    background-color: #666; /* Hover-Effekt */
+}
+
+#proposalButton:active {
+    background-color: #888; /* Aktivierter Zustand */
+}
+
+/* Container-Stil */
+#proposalContainer {
+    display: flex; /* Elemente nebeneinander */
+    gap: 10px; /* Abstand zwischen Dropdown und Button */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: left; /* Horizontale Zentrierung */
+    flex-wrap: wrap; /* Umbrechen bei kleineren Bildschirmen */
+}
+
+</style>
+
 <h1 class="widget-title section-title"> ... oder wie wäre es mit einem Vorschlag? </h1>
-<button onclick="proposeRandomRecipe()" class="search-form">Vorschlag</button>
+
+<div id="proposalContainer">
+
+    <label for="categoryDropdown" id="dropdownLabel">Kategorie:</label>
+    <select id="categoryDropdown">
+        <option value="auflauf">Auflauf</option>
+        <option value="suppe">Suppe</option>
+    </select>
+
+    <button id="proposalButton" onclick="proposeRandomRecipe()" class="search-form">Vorschlag</button>
+
+</div>
 
 <div id="proposal-result-box" class="search-result" style="display: none;">
     <div class="search-result--list article-list--compact">

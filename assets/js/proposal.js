@@ -1,3 +1,10 @@
+const recipeData = [
+    {"slug": "brokoli-suppe", "title": "Brokoli Suppe", "category": "Suppe"},
+    {"slug": "reisauflauf", "title": "Reisauflauf", "category": "Auflauf"},
+    {"slug": "spinatlasagne", "title": "Spinatlasagne", "category": "Auflauf"}
+];
+
+
 function proposeRandomRecipe() {
     var recipeName = selectRandomRecipe();
     editSearchResultElement(recipeName);
@@ -6,23 +13,16 @@ function proposeRandomRecipe() {
 
 function selectRandomRecipe() {
 
-    // 1) select random recipe
-    var recipes = [
-        "Spaghetti Bolognese",
-        "Käsespätzle",
-        "Sushi",
-        "Pizza Margherita",
-        "Gemüse-Curry"
-    ];
-
-    let randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
-    //console.log("selected recipe: " + recipeName)
+    var recipeTitles = recipeData.map(recipe => recipe.title);
+    let randomRecipe = recipeTitles[Math.floor(Math.random() * recipeTitles.length)];
+    console.log("Randomly selected recipe: " + randomRecipe);
     return randomRecipe;
 
 }
 
 
 function editSearchResultElement(recipeName) {
+    
     // 1) toggle search result box visibilty
     var resultBox = document.getElementById("proposal-result-box")
     resultBox.style.display = "block"; // Show the element
