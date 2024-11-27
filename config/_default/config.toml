@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://janek7.github.io/recipes/"#"http://localhost:1313"# "https://janek7.github.io/recipes/"# "https://demo.stack.jimmycai.com"
+baseurl = "http://localhost:1313"# "https://janek7.github.io/recipes/"# "https://demo.stack.jimmycai.com"
 languageCode = "de-de"
 title = "Eva's Rezept Repertoire"
 
