@@ -10,6 +10,6 @@ title: "K\xFCrbis Puffer"
 ---
 
 
-> Wo gefunden? [Internet](nan)
+> Wo gefunden? Internet
 
 Guten Appetit! :)

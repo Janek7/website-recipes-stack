@@ -10,6 +10,6 @@ title: Thuna Pasta
 ---
 
 
-> Wo gefunden? [Instagram](nan)
+> Wo gefunden? Instagram
 
 Guten Appetit! :)

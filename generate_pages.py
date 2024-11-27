@@ -13,14 +13,16 @@ BOOKS = [
     "Emmi kocht einfach",
     "Emmi kocht einfach: 75 vegetarische Rezepte",
     "Emmi kocht einfach: 85 Rezepte für das ganze Jahr",
-    "The Taste of GBS CEE",
-    "Kochbuch"
+    "The Taste of GBS CEE"
 ]
 
 LINK_SOURCES = [
     "Internet",
-    "Instagram"
+    "Instagram",
+    "Kochbuch"
 ]
+
+COOK_BOOK_URL = "https://drive.google.com/file/d/1OTIuJo0opKTimU0gug9hlcpmTNJdstUg/view"
 
 time_icon_element = '''<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="17" height="17" viewBox="0 0 22 22" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"></path>
@@ -73,8 +75,10 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     source = None
     if recipe_row['Source'] in BOOKS:
         source = f" Im Kochbuch '{recipe_row['Source']}' auf Seite {recipe_row['Source Link']}."
+    elif recipe_row['Source'] == 'Kochbuch':
+        source = f" In unserem [Kochbuch]({COOK_BOOK_URL}) von 2021 auf Seite {recipe_row['Source Link']}."
     elif recipe_row['Source'] in LINK_SOURCES:
-        if recipe_row['Source Link']:
+        if pd.notna(recipe_row['Source Link']):
             source = f"[{recipe_row['Source']}]({recipe_row['Source Link']})"
         else: 
             source = recipe_row['Source']

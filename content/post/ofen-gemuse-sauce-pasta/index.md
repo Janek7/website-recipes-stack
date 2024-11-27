@@ -10,6 +10,6 @@ title: "Ofen Gem\xFCse Sauce Pasta"
 ---
 
 
-> Wo gefunden? [Instagram](nan)
+> Wo gefunden? Instagram
 
 Guten Appetit! :)
