@@ -3,9 +3,7 @@ categories:
 - Auflauf
 date: '2024-11-26 00:00:00'
 slug: gefullte-zucchini-mit-linsenbolognese
-tags:
-- 'Emmi kocht einfach: 75 vegetarische Rezepte'
-- Top
+tags: []
 title: "Gef\xFCllte Zucchini mit Linsenbolognese"
 ---
 

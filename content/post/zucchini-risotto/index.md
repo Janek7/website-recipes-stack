@@ -3,9 +3,7 @@ categories:
 - Risotto
 date: '2024-11-05 00:00:00'
 slug: zucchini-risotto
-tags:
-- "Italienische Feierabendk\xFCche"
-- Top
+tags: []
 title: Zucchini Risotto
 ---
 

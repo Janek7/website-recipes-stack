@@ -54,7 +54,7 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
         'date': recipe_row['Date'].strftime('%Y-%m-%d %H:%M:%S'),
         # 'image': None
         'categories': [recipe_row['Category']],
-        'tags': [recipe_row['Source']] + ["Top"] if recipe_row['Top'] is not None else []
+        'tags': [recipe_row['Source']] + ["Top"] if pd.notna(recipe_row['Top']) else []
     }
 
     # 2) text in markdown format
@@ -82,7 +82,7 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
         if pd.notna(recipe_row['Source Link']):
             page_domain = extract_domain(recipe_row['Source Link'])
             page_title = get_page_title(recipe_row['Source Link'])
-            page_text = page_domain + f" > '{page_title}" if page_title else ''
+            page_text = page_domain + f" > '{page_title}'" if page_title else ''
             source = f"Im Internet unter [{page_text}]({recipe_row['Source Link']})."
         else:
             source = "Im Internet."
@@ -133,7 +133,7 @@ def clean_name(recipe_name: str) -> str:
     removed_special_chars = re.sub(r'[^A-Za-z0-9\s]', '', removed_special_chars)
     # replace spaces with -
     removed_special_chars = removed_special_chars.lower().replace(" ", "-")
-    
+
     return removed_special_chars
 
 

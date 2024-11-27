@@ -3,9 +3,7 @@ categories:
 - Sonstiges
 date: '2024-11-23 00:00:00'
 slug: kurbis-halusky
-tags:
-- Internet
-- Top
+tags: []
 title: "K\xFCrbis Halu\u0161ky"
 ---
 
