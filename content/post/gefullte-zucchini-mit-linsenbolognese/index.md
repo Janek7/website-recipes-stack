@@ -18,6 +18,6 @@ Perfekt mit Linsenbolognese vom Vortag. Schnelle Zubereitung
   <polyline points="12 7 12 12 15 15"></polyline>
 </svg> Die Zubereitung dauert ca. 40 Minuten.
 
-> Wo gefunden?  Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte' auf Seite 94.
+> Wo gefunden? Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte' auf Seite 94.
 
 Guten Appetit! :)

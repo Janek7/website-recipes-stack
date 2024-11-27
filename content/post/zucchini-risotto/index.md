@@ -10,6 +10,6 @@ title: Zucchini Risotto
 ---
 
 
-> Wo gefunden?  Im Kochbuch 'Italienische Feierabendküche' auf Seite nan.
+> Wo gefunden? Im Kochbuch 'Italienische Feierabendküche' auf Seite nan.
 
 Guten Appetit! :)

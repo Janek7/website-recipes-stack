@@ -1,2 +1,4 @@
 pandas
 pyyaml
+bs4
+instaloader

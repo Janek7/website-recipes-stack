@@ -18,6 +18,6 @@ Tolles Rezept
   <polyline points="12 7 12 12 15 15"></polyline>
 </svg> Die Zubereitung dauert ca. 60 Minuten.
 
-> Wo gefunden? Internet
+> Wo gefunden? Im Internet.
 
 Guten Appetit! :)

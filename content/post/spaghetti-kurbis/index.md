@@ -10,6 +10,6 @@ title: "Spaghetti K\xFCrbis"
 ---
 
 
-> Wo gefunden? [Internet](https://emmikochteinfach.de/spaghettikuerbis-mit-schinken-und-kaese/)
+> Wo gefunden? Im Internet unter [emmikochteinfach.de > 'Spaghettikürbis mit Schinken und Käse](https://emmikochteinfach.de/spaghettikuerbis-mit-schinken-und-kaese/).
 
 Guten Appetit! :)

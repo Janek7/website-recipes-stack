@@ -10,6 +10,6 @@ title: Tomaten Risotto
 ---
 
 
-> Wo gefunden?  Im Kochbuch 'Italienische Feierabendküche' auf Seite 60.
+> Wo gefunden? Im Kochbuch 'Italienische Feierabendküche' auf Seite 60.
 
 Guten Appetit! :)

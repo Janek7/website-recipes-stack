@@ -18,6 +18,6 @@ Kann mit Garden Gourmet Filetstreifen oder Hähnchen zubereitet werden
   <polyline points="12 7 12 12 15 15"></polyline>
 </svg> Die Zubereitung dauert ca. 30 Minuten.
 
-> Wo gefunden?  In unserem [Kochbuch](https://drive.google.com/file/d/1OTIuJo0opKTimU0gug9hlcpmTNJdstUg/view) von 2021 auf Seite 11.
+> Wo gefunden? In unserem [Kochbuch](https://drive.google.com/file/d/1OTIuJo0opKTimU0gug9hlcpmTNJdstUg/view) von 2021 auf Seite 11.
 
 Guten Appetit! :)

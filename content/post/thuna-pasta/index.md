@@ -10,6 +10,6 @@ title: Thuna Pasta
 ---
 
 
-> Wo gefunden? Instagram
+> Wo gefunden? Auf Instagram.
 
 Guten Appetit! :)

@@ -10,6 +10,6 @@ title: Linsen Bolognese
 ---
 
 
-> Wo gefunden?  Im Kochbuch 'Emmi kocht einfach: 85 Rezepte für das ganze Jahr' auf Seite 196.
+> Wo gefunden? Im Kochbuch 'Emmi kocht einfach: 85 Rezepte für das ganze Jahr' auf Seite 196.
 
 Guten Appetit! :)
