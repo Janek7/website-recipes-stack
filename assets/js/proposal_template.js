@@ -6,43 +6,7 @@
 //];
 
 // Real data is injected by python script process_recipe_data.py into recipesData
-const recipesData = [
-    {
-        "slug": "gefullte-zucchini-mit-linsenbolognese",
-        "title": "Gef\u00fcllte Zucchini mit Linsenbolognese",
-        "category": "Auflauf"
-    },
-    {
-        "slug": "kurbis-halusky",
-        "title": "K\u00fcrbis Halu\u0161ky",
-        "category": "Auflauf"
-    },
-    {
-        "slug": "tomaten-risotto",
-        "title": "Tomaten Risotto",
-        "category": "Auflauf"
-    },
-    {
-        "slug": "thuna-pasta",
-        "title": "Thuna Pasta",
-        "category": "Auflauf"
-    },
-    {
-        "slug": "ofen-gemuse-sauce-pasta",
-        "title": "Ofen Gem\u00fcse Sauce Pasta",
-        "category": "Auflauf"
-    },
-    {
-        "slug": "linsencurry",
-        "title": "Linsencurry",
-        "category": "Auflauf"
-    },
-    {
-        "slug": "spinatlasagne",
-        "title": "Spinatlasagne",
-        "category": "Auflauf"
-    }
-];
+const recipesData = [];
 
 
 function proposeRandomRecipe() {

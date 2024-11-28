@@ -1,22 +1,28 @@
 import os
-from typing import Dict, Tuple
+from typing import Dict, Tuple, List
 import unicodedata
 import requests
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import re
+import json
 
 import pandas as pd
 import yaml
 import instaloader
 
-BOOKS = [
+SOURCE_BOOKS = [
     "Italienische Feierabendküche",
     "Emmi kocht einfach",
     "Emmi kocht einfach: 75 vegetarische Rezepte",
     "Emmi kocht einfach: 85 Rezepte für das ganze Jahr",
     "The Taste of GBS CEE"
 ]
+
+SOURCE_INTERNET = "Internet"
+SOURCE_INSTAGRAM = "Instagram"
+SOURCE_COOKBOOK = "Kochbuch"
+SOURCE_FAMILY = "Familien Rezept"
 
 COOK_BOOK_URL = "https://drive.google.com/file/d/1OTIuJo0opKTimU0gug9hlcpmTNJdstUg/view"
 
@@ -30,16 +36,22 @@ time_icon_element = '''<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-
 def process_recipes(recipes: pd.DataFrame) -> None:
     """
     iterate over df and process single recipes
+    outputs recipes into posts and injects into proposal scripts and page
     """
     recipes = recipes[recipes['Recipe'].notnull()]
 
+    # 1) prepare data and generate posts
+    recipes_data = []
     for idx, row in recipes.iterrows():
-        print(f"{idx + 1}. Process {row['Recipe']}".center(100, '-'))
-        meta_dict, markdown_text = format_recipe_data(row)
-        generate_recipe_post(meta_dict, markdown_text)
-        # print(meta_dict)
-        # print(markdown_text)
-        print()
+        print(f"{idx + 1}. Process {row['Recipe']}".center(100, '-') + "\n")
+        recipe_data, markdown_text = format_recipe_data(row)
+        recipes_data.append(recipe_data)
+        generate_recipe_post(recipe_data, markdown_text)
+        if idx > 5:
+            break
+
+    # 2) inject data into search page and js script
+    inject_proposal_js(recipes_data)
 
 
 def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
@@ -70,15 +82,15 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     # 2c) source
     source = None
     # - cookbook recipe
-    if recipe_row['Source'] in BOOKS:
+    if recipe_row['Source'] in SOURCE_BOOKS:
         source = f"Im Kochbuch '{recipe_row['Source']}' auf Seite {recipe_row['Source Link']}."
     
     # - PDF cookbook recipe
-    elif recipe_row['Source'] == 'Kochbuch':
+    elif recipe_row['Source'] == SOURCE_COOKBOOK:
         source = f"In unserem [Kochbuch]({COOK_BOOK_URL}) von 2021 auf Seite {recipe_row['Source Link']}."
     
     # - Internet recipe
-    elif recipe_row['Source'] == 'Internet':
+    elif recipe_row['Source'] == SOURCE_INTERNET:
         if pd.notna(recipe_row['Source Link']):
             page_domain = extract_domain(recipe_row['Source Link'])
             page_title = get_page_title(recipe_row['Source Link'])
@@ -88,12 +100,16 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
             source = "Im Internet."
     
     # - Instagram recipe
-    elif recipe_row['Source'] == 'Instagram':
+    elif recipe_row['Source'] == SOURCE_INSTAGRAM:
         if pd.notna(recipe_row['Source Link']):
             instagram_user = get_instagram_username(recipe_row['Source Link'])
             source = f"Auf Instagram bei [{instagram_user}]({recipe_row['Source Link']})."
         else: 
             source = "Auf Instagram."
+
+    # - Family recipe
+    elif recipe_row['Source'] == SOURCE_INSTAGRAM:
+        source = "Das ist ein Familienrezept."
     
     else: 
         source = recipe_row['Source']
@@ -124,6 +140,26 @@ def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> None:
     os.makedirs(post_folder, exist_ok=True)
     with open(post_index_file, 'w') as file:
         file.write(file_content)
+
+    
+def inject_proposal_js(recipes_data: List[Dict]) -> None:
+    """
+    reads the proposal_template.js script, injects full recipe data and writes back to
+    """
+    # prepare data in correct list/dict format
+    recipes_data_js = [{'slug': r['slug'], 'title': r['title'], 'category': r['categories'][0] if pd.notna(r['categories'][0]) else None} for r in recipes_data]
+    recipes_data_js_string = json.dumps(recipes_data_js, indent=4)
+
+    # read template (proposal_template.js)
+    with open('assets\js\proposal_template.js', 'r') as file:
+        proposal_script = file.read()
+
+    # inject data
+    proposal_script = proposal_script.replace("const recipesData = [];", f"const recipesData = {recipes_data_js_string};")
+
+    # write to used script (proposal.js)
+    with open('assets\js\proposal.js', 'w') as file:
+        file.write(proposal_script)
 
 
 def clean_name(recipe_name: str) -> str:
@@ -193,5 +229,5 @@ if __name__ == '__main__':
     # print(os.path.exists("G:\\Meine Ablage\\Recipes.xlsx"))
 
     # df = pd.read_excel("G:\\Meine Ablage\\Recipes.xlsx")
-    df = pd.read_excel("Recipes.xlsx")
+    df = pd.read_excel("Recipes.xlsx", engine='openpyxl')
     process_recipes(recipes=df)
