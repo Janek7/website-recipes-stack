@@ -8,6 +8,11 @@
 // Real data is injected by python script process_recipe_data.py into recipesData
 const recipesData = [
     {
+        "slug": "kokos-barentatzen",
+        "title": "Kokos B\u00e4rentatzen",
+        "category": "Weihnachtspl\u00e4tzchen"
+    },
+    {
         "slug": "gefullte-zucchini-mit-linsenbolognese",
         "title": "Gef\u00fcllte Zucchini mit Linsenbolognese",
         "category": "Auflauf"
@@ -15,32 +20,82 @@ const recipesData = [
     {
         "slug": "kurbis-halusky",
         "title": "K\u00fcrbis Halu\u0161ky",
-        "category": "Auflauf"
+        "category": "Sonstiges"
     },
     {
         "slug": "tomaten-risotto",
         "title": "Tomaten Risotto",
-        "category": "Auflauf"
+        "category": "Risotto"
     },
     {
         "slug": "thuna-pasta",
         "title": "Thuna Pasta",
-        "category": "Auflauf"
+        "category": "Pasta"
     },
     {
         "slug": "ofen-gemuse-sauce-pasta",
         "title": "Ofen Gem\u00fcse Sauce Pasta",
-        "category": "Auflauf"
+        "category": "Pasta"
     },
     {
         "slug": "linsencurry",
         "title": "Linsencurry",
-        "category": "Auflauf"
+        "category": "Reis"
     },
     {
         "slug": "spinatlasagne",
         "title": "Spinatlasagne",
         "category": "Auflauf"
+    },
+    {
+        "slug": "kurbis-puffer",
+        "title": "K\u00fcrbis Puffer",
+        "category": "Sonstiges"
+    },
+    {
+        "slug": "mac-and-cheese",
+        "title": "Mac and Cheese",
+        "category": "Pasta"
+    },
+    {
+        "slug": "brokoli-suppe",
+        "title": "Brokoli Suppe",
+        "category": "Suppe"
+    },
+    {
+        "slug": "tofu-reis",
+        "title": "Tofu Reis",
+        "category": "Reis"
+    },
+    {
+        "slug": "zucchini-risotto",
+        "title": "Zucchini Risotto",
+        "category": "Risotto"
+    },
+    {
+        "slug": "spaghetti-kurbis",
+        "title": "Spaghetti K\u00fcrbis",
+        "category": "Sonstiges"
+    },
+    {
+        "slug": "linsen-bolognese",
+        "title": "Linsen Bolognese",
+        "category": "Pasta"
+    },
+    {
+        "slug": "reisauflauf",
+        "title": "Reisauflauf",
+        "category": "Reis"
+    },
+    {
+        "slug": "reis-mit-paprika-zucchini-und-feta",
+        "title": "Reis mit Paprika, Zucchini und Feta",
+        "category": "Reis"
+    },
+    {
+        "slug": "welcome-meal",
+        "title": "Welcome Meal",
+        "category": "Pasta"
     }
 ];
 

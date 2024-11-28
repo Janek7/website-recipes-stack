@@ -47,11 +47,10 @@ def process_recipes(recipes: pd.DataFrame) -> None:
         recipe_data, markdown_text = format_recipe_data(row)
         recipes_data.append(recipe_data)
         generate_recipe_post(recipe_data, markdown_text)
-        if idx > 5:
-            break
 
-    # 2) inject data into search page and js script
-    inject_proposal_js(recipes_data)
+    # 2) inject data into into web files
+    inject_recipes_into_proposal_js(recipes_data)
+    inject_categories_into_search_html(recipes_data)
 
 
 def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
@@ -142,9 +141,9 @@ def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> None:
         file.write(file_content)
 
     
-def inject_proposal_js(recipes_data: List[Dict]) -> None:
+def inject_recipes_into_proposal_js(recipes_data: List[Dict]) -> None:
     """
-    reads the proposal_template.js script, injects full recipe data and writes back to
+    reads the proposal_template.js script, injects full recipe data and writes back to proposal.js
     """
     # prepare data in correct list/dict format
     recipes_data_js = [{'slug': r['slug'], 'title': r['title'], 'category': r['categories'][0] if pd.notna(r['categories'][0]) else None} for r in recipes_data]
@@ -160,6 +159,29 @@ def inject_proposal_js(recipes_data: List[Dict]) -> None:
     # write to used script (proposal.js)
     with open('assets\js\proposal.js', 'w') as file:
         file.write(proposal_script)
+
+
+def inject_categories_into_search_html(recipes_data: List[Dict]) -> None:
+    """
+    reads the search_template.html file, injects full category data and writes back to search.html
+    """
+    # prepare data in correct list/dict format
+    categories = [r['categories'] for r in recipes_data]
+    # flatten, unique and sort
+    categories = sorted(list(set([item for sublist in categories for item in sublist if pd.notna(item)])))
+    # create dropdown options
+    category_options = "".join([f'<option value="{category}">{category}</option>\n' for category in categories])
+
+    # read template (search_template.html)
+    with open('layouts\page\search_template.html', 'r') as file:
+        search_html = file.read()
+
+    # inject data
+    search_html = search_html.replace('<option value="Placeholder">Placeholder</option>', category_options)
+
+    # write to used script (search.html)
+    with open('layouts\page\search.html', 'w') as file:
+        file.write(search_html)
 
 
 def clean_name(recipe_name: str) -> str:
