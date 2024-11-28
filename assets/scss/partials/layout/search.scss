@@ -1,0 +1,140 @@
+/* SEARCH */
+
+
+.search-form {
+    position: relative;
+    --button-size: 80px;
+
+    &.widget {
+        --button-size: 60px;
+
+        label {
+            font-size: 1.3rem;
+            top: 10px;
+        }
+
+        input {
+            font-size: 1.5rem;
+            padding: 30px 20px 15px 20px;
+        }
+    }
+
+    p {
+        position: relative;
+        margin: 0;
+    }
+
+    label {
+        position: absolute;
+        top: 15px;
+        inset-inline-start: 20px;
+        font-size: 1.4rem;
+        color: var(--card-text-color-tertiary);
+    }
+
+    input {
+        padding: 40px 20px 20px;
+        border-radius: var(--card-border-radius);
+        background-color: var(--card-background);
+        box-shadow: var(--shadow-l1);
+        color: var(--card-text-color-main);
+        width: 100%;
+        border: 0;
+        -webkit-appearance: none;
+
+        transition: box-shadow 0.3s ease;
+
+        font-size: 1.8rem;
+
+        &:focus {
+            outline: 0;
+            box-shadow: var(--shadow-l2);
+        }
+    }
+
+    button {
+        position: absolute;
+        inset-inline-end: 0;
+        top: 0;
+        height: 100%;
+        width: var(--button-size);
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+
+        padding: 0 10px;
+
+        &:focus {
+            outline: 0;
+
+            svg {
+                stroke-width: 2;
+                color: var(--accent-color);
+            }
+        }
+
+        svg {
+            color: var(--card-text-color-secondary);
+            stroke-width: 1.33;
+            transition: all 0.3s ease;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+}
+
+
+
+
+/* PROPOSAL */
+
+
+
+
+/* Stil für das Label */
+#dropdownLabel {
+    color: var(--card-text-color-tertiary); /* Weiße Schriftfarbe */
+    font-size: 16px; /* Größe der Schrift */
+    margin-right: 5px; /* Abstand zwischen Label und Dropdown */
+    white-space: nowrap; /* Verhindert, dass der Text umbricht */
+}
+
+/* Container-Stil */
+#proposalContainer {
+    display: flex; /* Elemente nebeneinander */
+    gap: 10px; /* Abstand zwischen Dropdown und Button */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: left; /* Horizontale Zentrierung */
+    flex-wrap: wrap; /* Umbrechen bei kleineren Bildschirmen */
+}
+
+/* Größe des Dropdowns und des Buttons */
+#categoryDropdown,
+#proposalButton {
+    height: 50px; /* Einheitliche Höhe */
+    width: 250px; /* Einheitliche Breite */
+    font-size: 16px; /* Gleiche Schriftgröße */
+    border-radius: 5px; /* Abgerundete Ecken für ein einheitliches Design */
+    display: inline-block; /* Gleiche Box-Darstellung */
+    text-align: center; /* Text zentrieren */
+    box-sizing: border-box; /* Innenabstand in die Größe einrechnen */
+}
+
+/* Dropdown-Stil mit Pfeil */
+#categoryDropdown {
+    background-color: var(--card-background); /* Hintergrundfarbe */
+    color: var(--card-text-color-tertiary); /* Schriftfarbe */
+    border: none; /* Kein Rahmen */
+    cursor: pointer; /* Zeiger auf Hand ändern */
+}
+
+
+/* Vorschlagsbutton-Stil */
+#proposalButton {
+    background-color: var(--card-background); /* Hintergrundfarbe */
+    color: var(--card-text-color-tertiary); /* Schriftfarbe */
+    border: none; /* Kein Rahmen */
+    cursor: pointer; /* Zeiger auf Hand ändern */
+    transition: background-color 0.3s ease; /* Weicher Übergang bei Hover */
+}
