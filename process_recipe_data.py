@@ -22,6 +22,7 @@ SOURCE_BOOKS = [
 SOURCE_INTERNET = "Internet"
 SOURCE_INSTAGRAM = "Instagram"
 SOURCE_COOKBOOK = "Kochbuch"
+SOURCE_KPTNCOOK = "KptnCook"
 SOURCE_FAMILY = "Familien Rezept"
 
 COOK_BOOK_URL = "https://drive.google.com/file/d/1OTIuJo0opKTimU0gug9hlcpmTNJdstUg/view"
@@ -106,6 +107,16 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
         else: 
             source = "Auf Instagram."
 
+    # - KptnCook
+    elif recipe_row['Source'] == SOURCE_KPTNCOOK:
+        if pd.notna(recipe_row['Source Link']):
+            page_domain = extract_domain(recipe_row['Source Link'])
+            page_title = get_page_title(recipe_row['Source Link'])
+            page_text = page_domain + f" > '{page_title}'" if page_title else ''
+            source = f"In der KptnCook App: [{page_text}]({recipe_row['Source Link']})."
+        else:
+            source = "In der KptnCook App."
+    
     # - Family recipe
     elif recipe_row['Source'] == SOURCE_INSTAGRAM:
         source = "Das ist ein Familienrezept."
@@ -137,7 +148,7 @@ def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> None:
 
     # 3) write to file
     os.makedirs(post_folder, exist_ok=True)
-    with open(post_index_file, 'w') as file:
+    with open(post_index_file, 'w', encoding='utf-8') as file:
         file.write(file_content)
 
     

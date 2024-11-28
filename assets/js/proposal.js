@@ -8,6 +8,21 @@
 // Real data is injected by python script process_recipe_data.py into recipesData
 const recipesData = [
     {
+        "slug": "pistazienkipferl",
+        "title": "Pistazienkipferl",
+        "category": "Weihnachtspl\u00e4tzchen"
+    },
+    {
+        "slug": "vanillekipferl",
+        "title": "Vanillekipferl",
+        "category": "Weihnachtspl\u00e4tzchen"
+    },
+    {
+        "slug": "spekulatiuskipferl-mit-mandeln",
+        "title": "Spekulatiuskipferl mit Mandeln",
+        "category": "Weihnachtspl\u00e4tzchen"
+    },
+    {
         "slug": "kokos-barentatzen",
         "title": "Kokos B\u00e4rentatzen",
         "category": "Weihnachtspl\u00e4tzchen"
@@ -33,8 +48,8 @@ const recipesData = [
         "category": "Pasta"
     },
     {
-        "slug": "ofen-gemuse-sauce-pasta",
-        "title": "Ofen Gem\u00fcse Sauce Pasta",
+        "slug": "ofen-gemuse-pasta",
+        "title": "Ofen Gem\u00fcse Pasta",
         "category": "Pasta"
     },
     {
@@ -96,6 +111,86 @@ const recipesData = [
         "slug": "welcome-meal",
         "title": "Welcome Meal",
         "category": "Pasta"
+    },
+    {
+        "slug": "nussecken",
+        "title": "Nussecken",
+        "category": "Backen"
+    },
+    {
+        "slug": "ofengnocchi-mit-paprika",
+        "title": "Ofen-Gnocchi mit Paprika",
+        "category": "Sonstiges"
+    },
+    {
+        "slug": "kinderriegel-muffins",
+        "title": "Kinderriegel Muffins",
+        "category": "Backen"
+    },
+    {
+        "slug": "kuchen-mit-herzfullung",
+        "title": "Kuchen mit Herzf\u00fcllung",
+        "category": "Backen"
+    },
+    {
+        "slug": "osterlamm-kuchen",
+        "title": "Osterlamm Kuchen",
+        "category": "Backen"
+    },
+    {
+        "slug": "pfannenlasagne",
+        "title": "Pfannenlasagne",
+        "category": "Auflauf"
+    },
+    {
+        "slug": "mohn-quark-kuchen",
+        "title": "Mohn Quark Kuchen",
+        "category": "Backen"
+    },
+    {
+        "slug": "hermelin-mit-pommes-oder-kartoffeln",
+        "title": "Hermelin mit Pommes oder Kartoffeln",
+        "category": "Sonstiges"
+    },
+    {
+        "slug": "chilinudeln-mit-gemuse",
+        "title": "Chili-Nudeln mit Gem\u00fcse",
+        "category": "Pasta"
+    },
+    {
+        "slug": "buchticky-se-sodo",
+        "title": "Buchti\u010dky se \u0161od\u00f3",
+        "category": "Sonstiges"
+    },
+    {
+        "slug": "reispfanne-mit-paprika-und-ei",
+        "title": "Reispfanne mit Paprika und Ei",
+        "category": "Reis"
+    },
+    {
+        "slug": "himbeer-wolkchen-torte",
+        "title": "Himbeer W\u00f6lkchen Torte",
+        "category": "Backen"
+    },
+    {
+        "slug": "nadivka",
+        "title": "N\u00e1divka",
+        "category": "Sonstiges"
+    },
+    {
+        "slug": "hefe-brotchen",
+        "title": "Hefe Br\u00f6tchen",
+        "category": "Backen"
+    },
+    {
+        "slug": "borsc",
+        "title": "Bor\u0161\u010d",
+        "category": "Suppe"
+    },
+    {
+        "slug": "cookies",
+        "title": "Cookies",
+        "category": "Backen"
     }
 ];
 

@@ -8,7 +8,7 @@ title: "Kokos B\xE4rentatzen"
 ---
 
 
-Erstes Plätzchenrezept 2024!
+Erstes PlÃ¤tzchenrezept 2024!
 
 > Wo gefunden? Im Internet.
 

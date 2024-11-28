@@ -8,7 +8,7 @@ title: Reisauflauf
 ---
 
 
-Dauert zwar lange im Ofen, kann man aber gut mit ins Büro nehmen
+Dauert zwar lange im Ofen, kann man aber gut mit ins BÃ¼ro nehmen
 
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="17" height="17" viewBox="0 0 22 22" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"></path>
