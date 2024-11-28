@@ -2,6 +2,7 @@
 categories:
 - Weihnachten
 date: '2023-12-06 00:00:00'
+image: vanillekipferl.JPG
 slug: vanillekipferl
 tags: []
 title: Vanillekipferl

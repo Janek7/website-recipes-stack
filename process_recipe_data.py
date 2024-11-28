@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import re
 import json
+import shutil
 
 import pandas as pd
 import yaml
@@ -41,13 +42,16 @@ def process_recipes(recipes: pd.DataFrame) -> None:
     """
     recipes = recipes[recipes['Recipe'].notnull()]
 
-    # 1) prepare data and generate posts
+    # 1) prepare data, copy images and generate posts
     recipes_data = []
     for idx, row in recipes.iterrows():
         print(f"{idx + 1}. Process {row['Recipe']}".center(100, '-') + "\n")
         recipe_data, markdown_text = format_recipe_data(row)
         recipes_data.append(recipe_data)
-        generate_recipe_post(recipe_data, markdown_text)
+        # generate folder and post
+        post_folder = generate_recipe_post(recipe_data, markdown_text)
+        # copy image (and resize?)
+        copy_image(row, post_folder)
 
     # 2) inject data into into web files
     inject_recipes_into_proposal_js(recipes_data)
@@ -64,10 +68,13 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
         # 'description': recipe_row['Description'], # sub title
         'slug': clean_name(recipe_row['Recipe']),
         'date': recipe_row['Date'].strftime('%Y-%m-%d %H:%M:%S'),
-        # 'image': None
         'categories': [recipe_row['Category']],
         'tags': [recipe_row['Source']] + ["Top"] if pd.notna(recipe_row['Top']) else []
     }
+
+    # assume the image is copied into the folder as well
+    if pd.notna(recipe_row['Image 1']):
+        recipe_dict["image"] = recipe_row['Image 1']
 
     # 2) text in markdown format
 
@@ -135,7 +142,7 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     return recipe_dict, text_markdown
 
 
-def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> None:
+def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> str:
     # 1) prepare file and folder names
     post_folder = f"content\\post\\{recipe_data['slug']}"
     post_index_file = f"{post_folder}\\index.md"
@@ -150,6 +157,24 @@ def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> None:
     os.makedirs(post_folder, exist_ok=True)
     with open(post_index_file, 'w', encoding='utf-8') as file:
         file.write(file_content)
+    
+
+    return post_folder
+
+
+IMAGE_FOLDER = "G:\\Meine Ablage\\Privat\\Kochbuch\\Website\\Converted"
+
+
+def copy_image(recipe_row: pd.Series, post_folder: str) -> None:
+    for image_keys in ["Image 1", "Image 2", "Image 3"]:
+        if pd.notna(recipe_row[image_keys]):
+            source_file = f"{IMAGE_FOLDER}\\{recipe_row[image_keys]}"
+            destination_file = f"{post_folder}\\{recipe_row[image_keys]}"
+            try:
+                shutil.copy(source_file, destination_file)
+            except FileNotFoundError:
+                print("WARNING: file not found ->", recipe_row[image_keys])
+            print(f"copied file {recipe_row[image_keys]}")
 
     
 def inject_recipes_into_proposal_js(recipes_data: List[Dict]) -> None:

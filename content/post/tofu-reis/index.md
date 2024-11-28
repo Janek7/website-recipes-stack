@@ -2,6 +2,7 @@
 categories:
 - Reis
 date: '2024-11-07 00:00:00'
+image: tofu-reis.JPEG
 slug: tofu-reis
 tags: []
 title: Tofu Reis

@@ -2,6 +2,7 @@
 categories:
 - Pasta
 date: '2024-10-18 00:00:00'
+image: linsen-bolo.JPEG
 slug: linsen-bolognese
 tags:
 - "Emmi kocht einfach: 85 Rezepte f\xFCr das ganze Jahr"

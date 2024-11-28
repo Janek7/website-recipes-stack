@@ -2,6 +2,7 @@
 categories:
 - Backen
 date: '2021-02-26 00:00:00'
+image: cookies.JPG
 slug: cookies
 tags: []
 title: Cookies

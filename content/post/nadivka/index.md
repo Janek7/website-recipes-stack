@@ -2,6 +2,7 @@
 categories:
 - Sonstiges
 date: '2023-01-23 00:00:00'
+image: nadivka.JPG
 slug: nadivka
 tags:
 - Familien Rezept

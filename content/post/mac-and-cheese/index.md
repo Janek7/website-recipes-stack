@@ -2,6 +2,7 @@
 categories:
 - Pasta
 date: '2024-11-12 00:00:00'
+image: mac-cheese.JPEG
 slug: mac-and-cheese
 tags: []
 title: Mac and Cheese

@@ -2,6 +2,7 @@
 categories:
 - Sonstiges
 date: '2024-05-16 00:00:00'
+image: ofen-gnocchi.JPG
 slug: ofengnocchi-mit-paprika
 tags:
 - KptnCook

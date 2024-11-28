@@ -2,6 +2,7 @@
 categories:
 - Backen
 date: '2021-12-05 00:00:00'
+image: nussecken.JPG
 slug: nussecken
 tags: []
 title: Nussecken

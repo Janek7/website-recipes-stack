@@ -2,6 +2,7 @@
 categories:
 - Sonstiges
 date: '2024-11-23 00:00:00'
+image: kurbis-halusky.JPEG
 slug: kurbis-halusky
 tags: []
 title: "K\xFCrbis Halu\u0161ky"

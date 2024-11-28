@@ -2,6 +2,7 @@
 categories:
 - Sonstiges
 date: '2024-10-26 00:00:00'
+image: spaghetti-kurbis.JPG
 slug: spaghetti-kurbis
 tags: []
 title: "Spaghetti K\xFCrbis"

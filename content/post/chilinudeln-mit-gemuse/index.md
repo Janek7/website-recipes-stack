@@ -2,6 +2,7 @@
 categories:
 - Pasta
 date: '2021-10-22 00:00:00'
+image: chili-nudeln.JPG
 slug: chilinudeln-mit-gemuse
 tags: []
 title: "Chili-Nudeln mit Gem\xFCse"

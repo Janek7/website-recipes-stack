@@ -2,6 +2,7 @@
 categories:
 - Sonstiges
 date: '2023-02-14 00:00:00'
+image: hermelin.JPG
 slug: hermelin-mit-pommes-oder-kartoffeln
 tags: []
 title: Hermelin mit Pommes oder Kartoffeln

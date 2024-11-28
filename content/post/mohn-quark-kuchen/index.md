@@ -2,6 +2,7 @@
 categories:
 - Backen
 date: '2024-03-16 00:00:00'
+image: mohn-quark-kuchen.JPG
 slug: mohn-quark-kuchen
 tags: []
 title: Mohn Quark Kuchen
