@@ -1,6 +1,6 @@
 ---
 categories:
-- "Weihnachtspl\xE4tzchen"
+- Weihnachten
 date: '2024-11-27 00:00:00'
 slug: kokos-barentatzen
 tags: []

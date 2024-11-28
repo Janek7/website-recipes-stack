@@ -10,22 +10,22 @@ const recipesData = [
     {
         "slug": "pistazienkipferl",
         "title": "Pistazienkipferl",
-        "category": "Weihnachtspl\u00e4tzchen"
+        "category": "Weihnachten"
     },
     {
         "slug": "vanillekipferl",
         "title": "Vanillekipferl",
-        "category": "Weihnachtspl\u00e4tzchen"
+        "category": "Weihnachten"
     },
     {
         "slug": "spekulatiuskipferl-mit-mandeln",
         "title": "Spekulatiuskipferl mit Mandeln",
-        "category": "Weihnachtspl\u00e4tzchen"
+        "category": "Weihnachten"
     },
     {
         "slug": "kokos-barentatzen",
         "title": "Kokos B\u00e4rentatzen",
-        "category": "Weihnachtspl\u00e4tzchen"
+        "category": "Weihnachten"
     },
     {
         "slug": "gefullte-zucchini-mit-linsenbolognese",
@@ -179,7 +179,7 @@ const recipesData = [
     },
     {
         "slug": "hefe-brotchen",
-        "title": "Hefe Br\u00f6tchen",
+        "title": "Hefe Brotchen",
         "category": "Backen"
     },
     {

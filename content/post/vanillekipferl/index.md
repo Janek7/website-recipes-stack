@@ -1,6 +1,6 @@
 ---
 categories:
-- "Weihnachtspl\xE4tzchen"
+- Weihnachten
 date: '2023-12-06 00:00:00'
 slug: vanillekipferl
 tags: []

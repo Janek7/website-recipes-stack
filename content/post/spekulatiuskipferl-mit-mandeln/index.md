@@ -1,6 +1,6 @@
 ---
 categories:
-- "Weihnachtspl\xE4tzchen"
+- Weihnachten
 date: '2024-11-29 00:00:00'
 slug: spekulatiuskipferl-mit-mandeln
 tags: []

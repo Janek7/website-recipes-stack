@@ -4,7 +4,7 @@ categories:
 date: '2023-04-02 00:00:00'
 slug: hefe-brotchen
 tags: []
-title: "Hefe Br\xF6tchen"
+title: Hefe Brotchen
 ---
 
 
