@@ -78,6 +78,23 @@
     padding-right: 30px; /* Platz für den Pfeil */
 }
 
+
+/* Style für das Dropdown */
+.styled-dropdown select {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Verhindert, dass der Text aus dem Dropdownfeld herausragt */
+    white-space: nowrap; /* Zeigt den Text in einer Zeile an */
+}
+
 /* Vorschlagsbutton-Stil */
 #proposalButton {
     background-color: #444; /* Hintergrundfarbe */
@@ -112,8 +129,9 @@
 
     <label for="categoryDropdown" id="dropdownLabel">Kategorie:</label>
     <select id="categoryDropdown">
-        <option value="auflauf">Auflauf</option>
-        <option value="suppe">Suppe</option>
+        <option value="Auflauf">Auflauf</option>
+        <option value="Suppe">Suppe</option>
+        <option value="Frühstück">Frühstück</option>
     </select>
 
     <button id="proposalButton" onclick="proposeRandomRecipe()" class="search-form">Vorschlag</button>
@@ -123,7 +141,7 @@
 <div id="proposal-result-box" class="search-result" style="display: none;">
     <div class="search-result--list article-list--compact">
         <article>
-            <a href="../p/kurbis-halusky/">
+            <a id="proposal-ref" href="../p/kurbis-halusky/">
                 <div class="article-details">
                     <!-- title and preview will be replaced dynamically -->
                     <h2 id="proposal-title" class="article-title">Kürbis <mark>Ha</mark>lušky</h2>

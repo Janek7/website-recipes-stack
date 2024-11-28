@@ -6,6 +6,12 @@ const recipeData = [
 
 
 function proposeRandomRecipe() {
+
+    // get selected categories
+    const dropdown = document.getElementById('categoryDropdown');
+    const selectedOptions = Array.from(dropdown.selectedOptions).map(option => option.value)
+    console.log(selectedOptions);
+
     var recipeName = selectRandomRecipe();
     editSearchResultElement(recipeName);
 }
