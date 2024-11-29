@@ -90,11 +90,18 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     source = None
     # - cookbook recipe
     if recipe_row['Source'] in SOURCE_BOOKS:
-        source = f"Im Kochbuch '{recipe_row['Source']}' auf Seite {recipe_row['Source Link']}."
+        if pd.notna(recipe_row['Source Link']):
+            source = f"Im Kochbuch '{recipe_row['Source']}' auf Seite {recipe_row['Source Link']}."
+        else:
+            source = f"Im Kochbuch '{recipe_row['Source']}'."
+
     
     # - PDF cookbook recipe
     elif recipe_row['Source'] == SOURCE_COOKBOOK:
-        source = f"In unserem [Kochbuch]({COOK_BOOK_URL}) von 2021 auf Seite {recipe_row['Source Link']}."
+        if pd.notna(recipe_row['Source Link']):
+            source = f"In unserem [Kochbuch]({COOK_BOOK_URL}) von 2021 auf Seite {recipe_row['Source Link']}."
+        else:
+            source = f"In unserem [Kochbuch]({COOK_BOOK_URL}) von 2021."
     
     # - Internet recipe
     elif recipe_row['Source'] == SOURCE_INTERNET:
