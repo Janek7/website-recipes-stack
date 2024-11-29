@@ -179,7 +179,7 @@ const recipesData = [
     },
     {
         "slug": "hefe-brotchen",
-        "title": "Hefe Brotchen",
+        "title": "Hefe Br\u00f6tchen",
         "category": "Backen"
     },
     {

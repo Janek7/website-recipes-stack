@@ -132,10 +132,20 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
         source = recipe_row['Source']
     soure_formatted = f"> Wo gefunden? {source}"
 
-    # 2d) combined
+    # 2d) additional fotos
+    print(recipe_row['Image 1'])
+    print(recipe_row['Image 2'])
+    fotos_formatted = ""
+    if pd.notna(recipe_row['Image 2']):
+        fotos_formatted += f"![Additional Image 1]({recipe_row['Image 2']})"
+    if pd.notna(recipe_row['Image 3']):
+        fotos_formatted += f" ![Additional Image 2]({recipe_row['Image 3']})"
+    
+    # 2e) combined
     text_markdown = ""
     if desc_formatted: text_markdown += "\n" + desc_formatted + "\n"
     if time_formatted: text_markdown += "\n" + time_formatted + "\n"
+    if fotos_formatted: text_markdown += "\n" + fotos_formatted + "\n"
     if soure_formatted: text_markdown += "\n" + soure_formatted + "\n"
     text_markdown += "\nGuten Appetit! :)"
 
@@ -166,6 +176,9 @@ IMAGE_FOLDER = "G:\\Meine Ablage\\Privat\\Kochbuch\\Website\\Converted"
 
 
 def copy_image(recipe_row: pd.Series, post_folder: str) -> None:
+    """
+    copy images from source folder into post folders
+    """
     for image_keys in ["Image 1", "Image 2", "Image 3"]:
         if pd.notna(recipe_row[image_keys]):
             source_file = f"{IMAGE_FOLDER}\\{recipe_row[image_keys]}"
