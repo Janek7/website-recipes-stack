@@ -9,6 +9,6 @@ title: Pfannenlasagne
 ---
 
 
-> Wo gefunden? Im Kochbuch 'Emmi kocht einfach' auf Seite nan.
+> Wo gefunden? Im Kochbuch 'Emmi kocht einfach'.
 
 Guten Appetit! :)

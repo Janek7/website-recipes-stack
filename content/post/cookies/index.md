@@ -9,6 +9,6 @@ title: Cookies
 ---
 
 
-> Wo gefunden? In unserem [Kochbuch](https://drive.google.com/file/d/1OTIuJo0opKTimU0gug9hlcpmTNJdstUg/view) von 2021 auf Seite nan.
+> Wo gefunden? In unserem [Kochbuch](https://drive.google.com/file/d/1OTIuJo0opKTimU0gug9hlcpmTNJdstUg/view) von 2021.
 
 Guten Appetit! :)
