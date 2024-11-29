@@ -133,13 +133,11 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     soure_formatted = f"> Wo gefunden? {source}"
 
     # 2d) additional fotos
-    print(recipe_row['Image 1'])
-    print(recipe_row['Image 2'])
     fotos_formatted = ""
     if pd.notna(recipe_row['Image 2']):
-        fotos_formatted += f"![Additional Image 1]({recipe_row['Image 2']})"
+        fotos_formatted += f"![Foto 1]({recipe_row['Image 2']})"
     if pd.notna(recipe_row['Image 3']):
-        fotos_formatted += f" ![Additional Image 2]({recipe_row['Image 3']})"
+        fotos_formatted += f" ![Foto 2]({recipe_row['Image 3']})"
     
     # 2e) combined
     text_markdown = ""
@@ -186,7 +184,7 @@ def copy_image(recipe_row: pd.Series, post_folder: str) -> None:
             try:
                 shutil.copy(source_file, destination_file)
             except FileNotFoundError:
-                print("WARNING: file not found ->", recipe_row[image_keys])
+                raise ValueError("WARNING: file not found ->", recipe_row[image_keys])
             print(f"copied file {recipe_row[image_keys]}")
 
     
