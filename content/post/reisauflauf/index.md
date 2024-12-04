@@ -2,6 +2,7 @@
 categories:
 - Reis
 date: '2024-02-10 00:00:00'
+image: IMG_5942.JPEG
 slug: reisauflauf
 tags: []
 title: Reisauflauf
@@ -15,6 +16,8 @@ Dauert zwar lange im Ofen, kann man aber gut mit ins Büro nehmen
   <circle cx="12" cy="12" r="9"></circle>
   <polyline points="12 7 12 12 15 15"></polyline>
 </svg> Die Zubereitung dauert ca. 70 Minuten.
+
+![Foto 1](IMG_5941.JPEG)
 
 > Wo gefunden? Im Kochbuch 'Emmi kocht einfach' auf Seite 92.
 

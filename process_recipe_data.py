@@ -191,7 +191,9 @@ def copy_image(recipe_row: pd.Series, post_folder: str) -> None:
             try:
                 shutil.copy(source_file, destination_file)
             except FileNotFoundError:
-                raise ValueError("WARNING: file not found ->", recipe_row[image_keys])
+                warning_text = f"WARNING: file not found -> {recipe_row[image_keys]}"
+                # raise ValueError(warning_text)
+                print(warning_text)
             print(f"copied file {recipe_row[image_keys]}")
 
     
