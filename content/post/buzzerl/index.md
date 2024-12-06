@@ -2,6 +2,7 @@
 categories:
 - Weihnachten
 date: '2024-12-03 00:00:00'
+image: db44fda8-1176-43dd-a15d-a45dfb1a692b.JPG
 slug: buzzerl
 tags: []
 title: Buzzerl

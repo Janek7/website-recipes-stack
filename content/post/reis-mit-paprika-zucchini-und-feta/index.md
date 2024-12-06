@@ -2,6 +2,7 @@
 categories:
 - Reis
 date: '2023-07-21 00:00:00'
+image: 86D75F44-A082-4F14-ABDC-A40A5982D183.JPG
 slug: reis-mit-paprika-zucchini-und-feta
 tags: []
 title: Reis mit Paprika, Zucchini und Feta

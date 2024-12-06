@@ -15,6 +15,8 @@ title: Pancakes
   <polyline points="12 7 12 12 15 15"></polyline>
 </svg> Die Zubereitung dauert ca. 20 Minuten.
 
+![Foto 1](IMG_1720.JPEG)
+
 > Wo gefunden? In unserem [Kochbuch](https://drive.google.com/file/d/1OTIuJo0opKTimU0gug9hlcpmTNJdstUg/view) von 2021 auf Seite 20.
 
 Guten Appetit! :)
