@@ -1,6 +1,6 @@
 ---
 categories:
-- Auflauf
+- Gnocchi
 date: '2020-12-29 00:00:00'
 image: IMG_1904.JPEG
 slug: vegetarischer-gnocchi-auflauf

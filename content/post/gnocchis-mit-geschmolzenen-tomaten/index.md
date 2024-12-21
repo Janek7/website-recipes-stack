@@ -1,6 +1,6 @@
 ---
 categories:
-- Sonstiges
+- Gnocchi
 date: '2019-11-16 00:00:00'
 image: gnocchis.JPG
 slug: gnocchis-mit-geschmolzenen-tomaten

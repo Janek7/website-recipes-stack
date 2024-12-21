@@ -1,6 +1,6 @@
 ---
 categories:
-- Sonstiges
+- Gnocchi
 date: '2021-07-06 00:00:00'
 image: IMG_3821.JPEG
 slug: gnocchi-mac--cheesestyle

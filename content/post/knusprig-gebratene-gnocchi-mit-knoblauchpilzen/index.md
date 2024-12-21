@@ -1,6 +1,6 @@
 ---
 categories:
-- Sonstiges
+- Gnocchi
 date: '2021-11-30 00:00:00'
 image: IMG_6625.JPEG
 slug: knusprig-gebratene-gnocchi-mit-knoblauchpilzen

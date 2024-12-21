@@ -18,11 +18,6 @@ const recipesData = [
         "category": "Sonstiges"
     },
     {
-        "slug": "frankfurter-suppe",
-        "title": "Frankfurter Suppe",
-        "category": "Suppe"
-    },
-    {
         "slug": "salzige-caramel-platzchen",
         "title": "Salzige Caramel Pl\u00e4tzchen",
         "category": "Weihnachten"
@@ -210,7 +205,7 @@ const recipesData = [
     {
         "slug": "ofengnocchi-mit-paprika",
         "title": "Ofen-Gnocchi mit Paprika",
-        "category": "Sonstiges"
+        "category": "Gnocchi"
     },
     {
         "slug": "orzo-mit-tomaten-mozarella-sauce",
@@ -231,6 +226,11 @@ const recipesData = [
         "slug": "toast-mit-ei-in-der-pfanne",
         "title": "Toast mit Ei in der Pfanne",
         "category": "Fr\u00fchst\u00fcck"
+    },
+    {
+        "slug": "frankfurter-suppe",
+        "title": "Frankfurter Suppe",
+        "category": "Suppe"
     },
     {
         "slug": "reisauflauf",
@@ -550,7 +550,7 @@ const recipesData = [
     {
         "slug": "knusprig-gebratene-gnocchi-mit-knoblauchpilzen",
         "title": "Knusprig gebratene Gnocchi mit Knoblauch-Pilzen",
-        "category": "Sonstiges"
+        "category": "Gnocchi"
     },
     {
         "slug": "gefullte-paprika-im-teigmantel",
@@ -600,7 +600,7 @@ const recipesData = [
     {
         "slug": "gnocchi-mac--cheesestyle",
         "title": "Gnocchi Mac & Cheese-Style",
-        "category": "Sonstiges"
+        "category": "Gnocchi"
     },
     {
         "slug": "nudelpilzpfanne",
@@ -735,7 +735,7 @@ const recipesData = [
     {
         "slug": "gnocchi-spinat-huhnchen-curry-auflauf",
         "title": "Gnocchi Spinat H\u00fchnchen Curry Auflauf",
-        "category": "Auflauf"
+        "category": "Gnocchi"
     },
     {
         "slug": "mac-and-cheese",
@@ -745,7 +745,7 @@ const recipesData = [
     {
         "slug": "vegetarischer-gnocchi-auflauf",
         "title": "Vegetarischer Gnocchi Auflauf",
-        "category": "Auflauf"
+        "category": "Gnocchi"
     },
     {
         "slug": "toast-mit-ruhrei-und-tomaten",
@@ -855,7 +855,7 @@ const recipesData = [
     {
         "slug": "gnocchis-mit-geschmolzenen-tomaten",
         "title": "Gnocchis mit geschmolzenen Tomaten",
-        "category": "Sonstiges"
+        "category": "Gnocchi"
     },
     {
         "slug": "tortelliniauflauf",

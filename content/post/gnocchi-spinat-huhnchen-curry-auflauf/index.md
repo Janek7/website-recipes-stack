@@ -1,6 +1,6 @@
 ---
 categories:
-- Auflauf
+- Gnocchi
 date: '2021-01-02 00:00:00'
 image: IMG_2057.JPEG
 slug: gnocchi-spinat-huhnchen-curry-auflauf

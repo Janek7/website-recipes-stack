@@ -306,6 +306,6 @@ def get_instagram_username(url: str) -> str:
 if __name__ == '__main__':
     # print(os.path.exists("G:\\Meine Ablage\\Recipes.xlsx"))
 
-    # df = pd.read_excel("G:\\Meine Ablage\\Recipes.xlsx")
-    df = pd.read_excel("Recipes.xlsx", engine='openpyxl')
+    df = pd.read_excel("G:\\Meine Ablage\\Recipes.xlsx")
+    # df = pd.read_excel("Recipes.xlsx", engine='openpyxl')
     process_recipes(recipes=df)
