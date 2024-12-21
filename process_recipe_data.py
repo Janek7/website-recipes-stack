@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import re
 import json
 import shutil
+import glob
 
 import pandas as pd
 import yaml
@@ -42,7 +43,10 @@ def process_recipes(recipes: pd.DataFrame) -> None:
     """
     recipes = recipes[recipes['Recipe'].notnull()]
 
-    # 1) prepare data, copy images and generate posts
+    # 1) delete current folders to avoid "orphan" recipes (renamed in excel, old ones stay)
+    delete_recipes()
+
+    # 2) prepare data, copy images and generate posts
     recipes_data = []
     for idx, row in recipes.iterrows():
         print(f"{idx + 1}. Process {row['Recipe']}".center(100, '-') + "\n")
@@ -155,6 +159,15 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     text_markdown += "\nGuten Appetit! :)"
 
     return recipe_dict, text_markdown
+
+
+def delete_recipes():
+    """ delete all current recipes from the folders"""
+    posts_folder = "content\\post\\*"
+    folders = glob.glob(posts_folder)
+    print(f"Info: delete {len(folders)} recipe post folders")
+    for f in folders:
+        shutil.rmtree(f)
 
 
 def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> str:
