@@ -8,6 +8,56 @@
 // Real data is injected by python script process_recipe_data.py into recipesData
 const recipesData = [
     {
+        "slug": "zucchini-brokkoli-suppe-",
+        "title": "Zucchini Brokkoli Suppe ",
+        "category": "Suppe"
+    },
+    {
+        "slug": "focaccia",
+        "title": "Focaccia",
+        "category": "Sonstiges"
+    },
+    {
+        "slug": "frankfurter-suppe",
+        "title": "Frankfurter Suppe",
+        "category": "Suppe"
+    },
+    {
+        "slug": "salzige-caramel-platzchen",
+        "title": "Salzige Caramel Pl\u00e4tzchen",
+        "category": "Weihnachten"
+    },
+    {
+        "slug": "dal-makhani-mit-belugalinsen",
+        "title": "Dal Makhani mit Belugalinsen",
+        "category": "Reis"
+    },
+    {
+        "slug": "kartoffel-mit-dip",
+        "title": "Kartoffel mit Dip",
+        "category": "Sonstiges"
+    },
+    {
+        "slug": "honiglebkuchen",
+        "title": "Honiglebkuchen",
+        "category": "Weihnachten"
+    },
+    {
+        "slug": "nusseckenplatzchen",
+        "title": "Nusseckenpl\u00e4tzchen",
+        "category": "Weihnachten"
+    },
+    {
+        "slug": "ruhrei-mit-getrockneten-tomaten-auf-knackebrot",
+        "title": "R\u00fchrei mit getrockneten Tomaten auf Kn\u00e4ckebrot",
+        "category": "Fr\u00fchst\u00fcck"
+    },
+    {
+        "slug": "froschmauler",
+        "title": "Froschm\u00e4uler",
+        "category": "Weihnachten"
+    },
+    {
         "slug": "buzzerl",
         "title": "Buzzerl",
         "category": "Weihnachten"
@@ -215,6 +265,11 @@ const recipesData = [
     {
         "slug": "kekse-aus-gebackpresse",
         "title": "Kekse aus Geb\u00e4ckpresse",
+        "category": "Weihnachten"
+    },
+    {
+        "slug": "barentatzen",
+        "title": "B\u00e4rentatzen",
         "category": "Weihnachten"
     },
     {
@@ -438,6 +493,11 @@ const recipesData = [
         "category": "Backen"
     },
     {
+        "slug": "cinska",
+        "title": "\u010c\u00ednska",
+        "category": "Reis"
+    },
+    {
         "slug": "udon-sesam-nudeln",
         "title": "Udon Sesam Nudeln",
         "category": "Pasta"
@@ -465,6 +525,11 @@ const recipesData = [
     {
         "slug": "roulladen-mit-spatzlen",
         "title": "Roulladen mit Sp\u00e4tzlen",
+        "category": "Weihnachten"
+    },
+    {
+        "slug": "mohnplatzchen",
+        "title": "Mohnpl\u00e4tzchen",
         "category": "Weihnachten"
     },
     {

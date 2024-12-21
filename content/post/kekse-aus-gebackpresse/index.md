@@ -15,7 +15,7 @@ title: "Kekse aus Geb\xE4ckpresse"
   <polyline points="12 7 12 12 15 15"></polyline>
 </svg> Die Zubereitung dauert ca. 60 Minuten.
 
-![Foto 1](20ca50ad-4b73-41cd-891e-5e18f1eb8fd9.JPG)
+![Foto 1](20ca50ad-4b73-41cd-891e-5e18f1eb8fd9.JPG) ![Foto 2](IMG_9371.JPEG)
 
 > Wo gefunden? Im Internet.
 

@@ -2,6 +2,7 @@
 categories:
 - Weihnachten
 date: '2024-12-02 00:00:00'
+image: c47e2a90-62d2-4554-a928-1b99018135af.JPG
 slug: kuhflecken-platzchen
 tags: []
 title: "Kuhflecken Pl\xE4tzchen"

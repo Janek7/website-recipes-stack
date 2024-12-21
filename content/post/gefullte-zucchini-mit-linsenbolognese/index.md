@@ -2,6 +2,7 @@
 categories:
 - Auflauf
 date: '2024-11-26 00:00:00'
+image: 6e4d156b-8ea9-4a07-b389-e4e320eba4d1.JPG
 slug: gefullte-zucchini-mit-linsenbolognese
 tags: []
 title: "Gef\xFCllte Zucchini mit Linsenbolognese"

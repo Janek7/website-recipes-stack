@@ -1,11 +1,11 @@
 ---
 categories:
-- Weihnachten
-date: '2024-11-29 00:00:00'
-image: IMG_9358.JPEG
-slug: spekulatiuskipferl-mit-mandeln
+- "Fr\xFChst\xFCck"
+date: '2024-12-07 00:00:00'
+image: IMG_9383.JPEG
+slug: ruhrei-mit-getrockneten-tomaten-auf-knackebrot
 tags: []
-title: Spekulatiuskipferl mit Mandeln
+title: "R\xFChrei mit getrockneten Tomaten auf Kn\xE4ckebrot"
 ---
 
 
@@ -13,8 +13,8 @@ title: Spekulatiuskipferl mit Mandeln
   <path stroke="none" d="M0 0h24v24H0z"></path>
   <circle cx="12" cy="12" r="9"></circle>
   <polyline points="12 7 12 12 15 15"></polyline>
-</svg> Die Zubereitung dauert ca. 60 Minuten.
+</svg> Die Zubereitung dauert ca. 15 Minuten.
 
-> Wo gefunden? Im Internet unter [www.gaumenfreundin.de > 'Spekulatiuskipferl mit Mandeln backen'](https://www.gaumenfreundin.de/wuerzige-spekulatiuskipferl-mit-mandeln/).
+> Wo gefunden? Im Internet unter [eatsmarter.de > 'Rührei mit Tomaten auf Brot Rezept | EAT SMARTER'](https://eatsmarter.de/rezepte/ruehrei-mit-tomaten-auf-brot-0).
 
 Guten Appetit! :)

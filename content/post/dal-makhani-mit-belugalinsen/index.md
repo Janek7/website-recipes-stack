@@ -1,11 +1,13 @@
 ---
 categories:
-- Weihnachten
-date: '2024-11-29 00:00:00'
-image: IMG_9358.JPEG
-slug: spekulatiuskipferl-mit-mandeln
-tags: []
-title: Spekulatiuskipferl mit Mandeln
+- Reis
+date: '2024-12-14 00:00:00'
+image: IMG_9422.JPEG
+slug: dal-makhani-mit-belugalinsen
+tags:
+- Internet
+- Top
+title: Dal Makhani mit Belugalinsen
 ---
 
 
@@ -13,8 +15,8 @@ title: Spekulatiuskipferl mit Mandeln
   <path stroke="none" d="M0 0h24v24H0z"></path>
   <circle cx="12" cy="12" r="9"></circle>
   <polyline points="12 7 12 12 15 15"></polyline>
-</svg> Die Zubereitung dauert ca. 60 Minuten.
+</svg> Die Zubereitung dauert ca. 70 Minuten.
 
-> Wo gefunden? Im Internet unter [www.gaumenfreundin.de > 'Spekulatiuskipferl mit Mandeln backen'](https://www.gaumenfreundin.de/wuerzige-spekulatiuskipferl-mit-mandeln/).
+> Wo gefunden? Im Internet unter [biancazapatka.com > 'Indisches Linsen Curry (Veganes Dal Makhani) - Bianca Zapatka'](https://biancazapatka.com/de/wprm_print/indisches-linsen-curry-veganes-dal-makhani).
 
 Guten Appetit! :)
